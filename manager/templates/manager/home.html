@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}" />
+  </head>
+  <body style="background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('{% static 'images/school.jpg' %}');background-position:center;background-size:cover">
+    {% include 'manager/navbar.html' %}
+    <br /><br /><br />
+    <div class="container main-div mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <p class="display-6 text-light">
+            <strong>𝖋𝖆𝖗𝖆 𝖉𝖆𝖓𝖊𝖘𝖍</strong> <br /><br /><br /> A Home For Every Student To Chase Thier Dreams.
+          </p>
+          <br />
+          <button class="btn btn-outline-success mt-5 "><a class="text-succes" style="text-decoration: none;" href="{% url 'loginUser' %}">Get Started</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

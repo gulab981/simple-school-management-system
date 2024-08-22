@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">𝖋𝖆𝖗𝖆 𝖉𝖆𝖓𝖊𝖘𝖍</a>
+          <div class="d-flex">
+            <button class="btn btn-outline-primary" type="submit"><a style="text-decoration: none;" href="{% url 'login' %}">Login</a></button>
+          </div>
+        </div>
+      </nav>
+    {% block content %}
+    
+    {% endblock %}
+    <script src="{% static '/js/jquery.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.css' %}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url({% static '/images/school-dashboard.jpg' %});background-position:center;background-size:cover;">
+    {% include "manager/dashboard-navbar.html" %}
+    <div class="container">
+        <div class="row">
+            
+            <br><br><br><br>
+            <div class="col-12 col-sm-12 sol-md-6 col-lg-12 mx-2 mt-5">
+                <h1 class="text-center mt-5">𝖋𝖆𝖗𝖆 𝖉𝖆𝖓𝖊𝖘𝖍</h1>
+                <p class="text-center fw-normal h5 mt-4 lh-lg">Welcome to  our School, where academic excellence and holistic development come together! Our dedicated team of educators is committed to fostering a nurturing environment that inspires curiosity, creativity, and lifelong learning</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
